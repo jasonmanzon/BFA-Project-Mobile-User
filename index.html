@@ -325,7 +325,7 @@
         <!--- obsidian 3D ---> 
         
          <a-assets>
-            <a-asset-item id="boxx" src="otest4.gltf" ></a-asset-item>
+            <a-asset-item id="boxx" src="obsidianV.glb" ></a-asset-item>
          </a-assets>
 
         <a-entity gltf-model="#boxx" 
@@ -762,7 +762,7 @@
     
         
     <a-entity id="cameraRig" position="0 3 62" >
-      <a-entity id="head" position="0 0 0" camera="userHeight:1.6" look-controls="pointerLockEnabled:true">
+      <a-entity id="head" position="0 0 0" camera="userHeight:3" look-controls="pointerLockEnabled:true">
         <a-entity position="0.1 -0.1 0"
           touch-listener
           teleport-controls=
@@ -770,7 +770,7 @@
              teleportOrigin: #head;
              startEvents:starttouch;
              endEvents:endtouch;
-             curveShootingSpeed:15;
+             curveShootingSpeed:20;
              hitCylinderRadius:1;
              collisionEntities: [ground]"
           >
